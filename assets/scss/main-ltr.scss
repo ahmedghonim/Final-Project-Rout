@@ -1,0 +1,55 @@
+// Set directio ltr
+@import "./direction-ltr";
+
+// Bootstrap ltr
+@import "../vendors/bootstrap-4.3.1/scss/bootstrap.scss";
+
+// Font
+$regular: "apercu",sans-serif;
+$bold:    'FontsFree-Net-ApercuBold';
+$style:    'parisienne-regular';
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  display-font: swap;
+font-family: $style;
+src: url("../fonts/en/parisienne-regular.eot");
+src: url("../fonts/en/parisienne-regular.eot?#iefix") format('embedded-opentype'),
+     url("../fonts/en/parisienne-regular.otf") format('otf'),
+     url("../fonts/en/parisienne-regular.svg#parisienne-regular") format('svg'),
+     url("../fonts/en/parisienne-regular.ttf") format('truetype'),
+     url("../fonts/en/parisienne-regular.woff") format('woff'),
+     url("../fonts/en/parisienne-regular.woff2") format('woff2');
+font-weight: 600;
+font-style: normal;
+}
+@font-face {
+    display-font: swap;
+  font-family: $bold;
+  src: url("../fonts/en/FontsFree-Net-ApercuBold.eot");
+  src: url("../fonts/en/FontsFree-Net-ApercuBold.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/en/FontsFree-Net-ApercuBold.otf") format('otf'),
+       url("../fonts/en/FontsFree-Net-ApercuBold.svg#FontsFree-Net-ApercuBold") format('svg'),
+       url("../fonts/en/FontsFree-Net-ApercuBold.ttf") format('truetype'),
+       url("../fonts/en/FontsFree-Net-ApercuBold.woff") format('woff'),
+       url("../fonts/en/FontsFree-Net-ApercuBold.woff2") format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  display-font: swap;
+  font-family: $regular;
+  src: url("../fonts/en/ApercuArabicPro-Regular.eot");
+  src: url("../fonts/en/ApercuArabicPro-Regular.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/en/ApercuArabicPro-Regular.woff2") format('woff2'),
+       url("../fonts/en/ApercuArabicPro-Regular.woff") format('woff'),
+       url("../fonts/en/ApercuArabicPro-Regular.ttf") format('truetype'),
+       url("../fonts/en/ApercuArabicPro-Regular.svg#ApercuArabicPro-Regular") format('svg'),
+       url("../fonts/en/ApercuArabicPro-Regular.otf") format('otf');
+       font-weight: normal;
+       font-style: normal;
+}
+
+
+// Styles
+@import "./import";
