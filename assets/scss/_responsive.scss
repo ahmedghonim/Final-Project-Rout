@@ -1,0 +1,31 @@
+//=============================================================
+// Large devices (desktops, less than 1200px)
+//=============================================================
+@include media-breakpoint-down(lg) {}
+
+//=============================================================
+// Large devices (desktops, less than 992px)
+//=============================================================
+@include media-breakpoint-down(md) {
+    .site-plane{
+        padding: 55px 30px 66px;
+         .row-content .box-plan{
+        margin-bottom: 30px;
+    }}
+    
+}
+
+//=============================================================
+// Large devices (desktops, less than 768px)
+//=============================================================
+@include media-breakpoint-down(sm) {
+    .masonry .subscribe-inst{
+        display: block;
+        text-align: center;
+    }
+}
+
+//=============================================================
+// Large devices (desktops, less than 575px)
+//=============================================================
+@include media-breakpoint-down(xs) {}

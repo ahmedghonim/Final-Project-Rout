@@ -1,0 +1,393 @@
+@import "import";
+
+/*Variables*/
+$color-1   : #49c5b6;
+$color-2   : #fff;
+$color-3   :#000;
+$bg-section: #F4F7F6;
+$textColor : #202121;
+
+
+/*Radius*/
+@mixin radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+/*Transition*/
+@mixin transition($transition) {
+    -webkit-transition: all ease-in-out $transition !important;
+    -moz-transition: all ease-in-out $transition !important;
+    -ms-transition: all ease-in-out $transition !important;
+    transition: all ease-in-out $transition !important;
+}
+
+/*Delay*/
+@mixin delay($delay) {
+    -webkit-transition-delay: $delay;
+    -moz-transition-delay: $delay;
+    -ms-transition-delay: $delay;
+    transition-delay: $delay;
+}
+
+/*Flex center*/
+@mixin flexCenter() {
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    display: flex;
+}
+
+/*Reset ul*/
+@mixin resetUl() {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Box shadow*/
+@mixin boxShadow() {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/*===========================================
+	Main style
+=============================================*/
+/*
+    General
+-----------------*/
+html {
+    direction: ltr;
+}
+
+body {
+    font-size: 18px;
+    color: $textColor;
+    overflow-x: hidden;
+    text-align: left;
+    background: unset;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 , p {
+    color: $color-3;
+}
+
+h1 {
+    font-size: 50px;
+    color: $color-3;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+a {
+    @include transition(0.3s);
+    opacity: 1;
+    color: $color-2;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: darken($color-2, 10%);
+    }
+}
+
+/*Button*/
+button,
+a,
+.btn {
+    //background: transparent;
+    &:hover,
+    &:focus,
+    &:active {
+        box-shadow: none !important;
+        outline: 0 !important;
+        cursor: pointer;
+    }
+}
+
+.btn {
+    @include radius(7px);
+    border: none;
+    font-size: 14px;
+    padding: 10px 25px;
+
+    &.btn-lg {
+        padding: 15px 40px;
+        font-size: 18px;
+    }
+
+    &.btn-sm {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+
+    &.btn-primary {
+        background-color: $color-2;
+        color: $bg-section;
+        border: 1px solid transparent;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: transparent;
+            color: $color-2;
+            border: 1px solid $color-2;
+        }
+    }
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: transparent;
+    color: $color-2;
+    border: 1px solid $color-2;
+}
+
+.form-control {
+    font-size: 18px;
+
+    &:focus,
+    &:active {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+/*  ================================ site-plane ======================================  */
+.site-plane {
+    background: $bg-section;
+    padding: 55px 66px 66px;
+
+    .box-head-title {
+        text-align: center;
+        margin: 0 auto 50px;
+
+        h1 {
+            line-height: normal;
+            padding: 0;
+            margin: 0;
+            cursor: default;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            font-size: 2.1rem;
+            margin-bottom: 35px;
+        }
+
+        p {
+            font-weight: 300;
+            color: $textColor;
+            line-height: 170%;
+            cursor: default;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+
+            span {
+                font-weight: 900;
+            }
+        }
+    }
+
+    .row-content {
+        .main-box {
+            border: 1px solid $color-1 !important;
+
+            .btn-submitSite1 {
+                background-color: $color-1;
+                color: $color-2;
+                border: 1px solid $color-1;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $textColor;
+                    border: 1px solid $textColor;
+                }
+            }
+        }
+
+        .box-plan {
+            text-align: center;
+            background: $color-2;
+            padding: 25px;
+            border: 1px solid transparent;
+
+            h3 {
+                font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+                margin-bottom: 20px;
+            }
+
+            span {
+                display: block;
+            }
+
+            .free-p {
+                .free {
+                    color: $color-1;
+                    font-size: 1.4rem;
+                    margin: 0;
+                    padding: 0;
+                    display: inline;
+                }
+            }
+
+            .num-price {
+                font-size: 100px;
+                font-weight: 900;
+                margin: -10px;
+            }
+
+            .btn-submitSite1 {
+                margin: 25px 0;
+            }
+
+            .des-plan {
+                text-align: left;
+                font-size: 0.9rem;
+                line-height: 1.7rem;
+            }
+
+            ul {
+                @include resetUl();
+                text-align: left;
+                margin-top: 30px;
+
+                li {
+                    padding-left: 30px;
+                    position: relative;
+                    margin-bottom: 5px;
+                    font-size: 1rem;
+                    color: $color-3;
+                    i {
+                        position: absolute;
+                        top: 3px;
+                        left: 0;
+                    }
+                }
+
+                .special {
+                    color: $color-1;
+                }
+            }
+        }
+    }
+}
+
+/*  ================================ masonry-gallery ======================================  */
+.masonry {
+    background: $color-3;
+    padding-left: 35px;
+    padding-right: 2px;
+
+    .img-d {
+        overflow: hidden;
+        position: relative;
+
+        div {
+            position: absolute;
+            bottom: -26px;
+            opacity: 0;
+            @include flexCenter();
+            justify-content: space-between;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+            -o-justify-content: space-between;
+            @include transition(0.3s);
+
+            a {
+                position: relative;
+                padding-right: 20px;
+                margin: 0 15px;
+                color: $color-2;
+
+                span {
+                    font-size: 0.8rem;
+                }
+
+                svg {
+                    position: absolute;
+                    top: 7px;
+                    right: 0;
+                }
+            }
+        }
+
+        .image-custom {
+            filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            opacity: 0.5;
+            @include transition(0.3s);
+        }
+
+        &:hover {
+            .image-custom {
+                filter: grayscale(0%);
+                -moz-filter: grayscale(0%);
+                -webkit-filter: grayscale(0%);
+                -o-filter: grayscale(0%);
+                opacity: 1;
+            }
+
+            div {
+                bottom: 15px;
+                opacity: 1;
+            }
+        }
+    }
+    .subscribe-inst {
+        color: $color-2;
+        @include flexCenter();
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -o-justify-content: space-between;
+        margin: 0;
+        margin-top: 30px;
+        a {
+            text-decoration: underline;
+            color: $color-2;
+        }
+    }
+}
