@@ -1,0 +1,481 @@
+.progress {
+  width: 150px;
+  height: 150px;
+  background: none;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 6px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.progress .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.text-gray {
+  color: #aaa;
+}
+
+div.h4 {
+  line-height: 1rem;
+}
+
+/*
+*
+* ==========================================
+* FOR CARD
+* ==========================================
+*
+*/
+* {
+  -webkit-transition: all 1s !important;
+  transition: all 1s !important;
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+}
+
+.cardcontainer {
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cardcontainer:hover {
+  -webkit-box-shadow: 0 0 45px gray;
+          box-shadow: 0 0 45px gray;
+}
+
+.photo {
+  height: 300px;
+  width: 100%;
+}
+
+.photo img {
+  height: 100%;
+  width: 100%;
+}
+
+.txt1 {
+  margin: auto;
+  text-align: center;
+  font-size: 17px;
+}
+
+.content {
+  width: 80%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -33px;
+}
+
+.photos {
+  width: 90px;
+  height: 30px;
+  background-color: #E74C3C;
+  color: white;
+  position: relative;
+  top: -30px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.txt4 {
+  font-size: 27px;
+  position: relative;
+  top: 33px;
+}
+
+.txt5 {
+  position: relative;
+  top: 18px;
+  color: #E74C3C;
+  font-size: 23px;
+}
+
+.txt2 {
+  position: relative;
+  top: 10px;
+}
+
+.cardcontainer:hover > .photo {
+  height: 200px;
+  -webkit-animation: move1 1s alternate;
+          animation: move1 1s alternate;
+}
+
+@-webkit-keyframes move1 {
+  0% {
+    height: 300px;
+  }
+  100% {
+    height: 200px;
+  }
+}
+
+@keyframes move1 {
+  0% {
+    height: 300px;
+  }
+  100% {
+    height: 200px;
+  }
+}
+
+.cardcontainer:hover > .content {
+  height: 200px;
+}
+
+.footer {
+  width: 80%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  position: relative;
+  top: -15px;
+}
+
+.btn {
+  position: relative;
+  top: 20px;
+}
+
+#heart {
+  cursor: pointer;
+}
+
+.like {
+  float: right;
+  font-size: 22px;
+  position: relative;
+  top: 20px;
+  color: #333333;
+}
+
+.fa-gratipay {
+  margin-right: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.fa-gratipay:hover {
+  color: #E74C3C;
+}
+
+.txt3 {
+  color: gray;
+  position: relative;
+  top: 18px;
+  font-size: 14px;
+}
+
+.comments {
+  float: right;
+  cursor: pointer;
+}
+
+.fa-clock,
+.fa-comments {
+  margin-right: 7px;
+}
+
+/* ------ Scand Card ------ */
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+
+/* ------------------------ */
+a {
+  text-decoration: none;
+}
+
+/* Card Styles */
+.card-sl {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-image img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 8px 8px 0px 0;
+}
+
+.card-action {
+  position: relative;
+  float: right;
+  margin-top: -25px;
+  margin-right: 20px;
+  z-index: 2;
+  color: #E26D5C;
+  background: #fff;
+  border-radius: 100%;
+  padding: 15px;
+  font-size: 15px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-action:hover {
+  color: #fff;
+  background: #E26D5C;
+  -webkit-animation: pulse 1.5s infinite;
+}
+
+.card-heading {
+  font-size: 18px;
+  font-weight: bold;
+  background: #fff;
+  padding: 10px 15px;
+}
+
+.card-text {
+  padding: 10px 15px;
+  background: #fff;
+  font-size: 14px;
+  color: #636262;
+}
+
+.card-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #1F487E;
+  color: #fff;
+  border-radius: 0 0 8px 8px;
+}
+
+.card-button:hover {
+  text-decoration: none;
+  background-color: #1D3461;
+  color: #fff;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+            box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+            box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+  }
+}
+
+.wrapper {
+  margin: 10vh;
+}
+
+.card {
+  border: none;
+  -webkit-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+  border-radius: 20px;
+  min-height: 450px;
+  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 420px) {
+  .card {
+    min-height: 300px;
+  }
+}
+
+.card.card-has-bg {
+  -webkit-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card.card-has-bg:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.card.card-has-bg:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+  background-size: 130%;
+  -webkit-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card.card-has-bg:hover .card-img-overlay {
+  -webkit-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: #234f6d;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 69, 114, 0.5)), to(#044572));
+  background: linear-gradient(0deg, rgba(4, 69, 114, 0.5) 0%, #044572 100%);
+}
+
+.card .card-footer {
+  background: none;
+  border-top: none;
+}
+
+.card .card-footer .media img {
+  border: solid 3px rgba(234, 95, 0, 0.3);
+}
+
+.card .card-meta {
+  color: orange;
+}
+
+.card .card-body {
+  -webkit-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card:hover {
+  cursor: pointer;
+  -webkit-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card:hover .card-body {
+  margin-top: 30px;
+  -webkit-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card .card-img-overlay {
+  -webkit-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: #234f6d;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(35, 79, 109, 0.378589)), to(#455f71));
+  background: linear-gradient(0deg, rgba(35, 79, 109, 0.378589) 0%, #455f71 100%);
+}
+/*# sourceMappingURL=card&hom.css.map */

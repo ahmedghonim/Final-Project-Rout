@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="./assets/scss/imports/sidebar.css">
+  <link rel="stylesheet" href="./assets/scss/imports/pages-index.css">
+  <link rel="stylesheet" href="./assets/scss/imports/nav.css">
+  <link rel="stylesheet" href="./assets/scss/imports/footer.css">
+  <link rel="stylesheet" href="./assets/scss/main-style.css">
+</head>
+
+<body>
+
+
+  <div class="sidebar">
+    <div class="logo_content">
+      <div class="logo">
+        <span class="logo_name">English</span>
+        <!-- <i class='bx bxl-c-plus-plus'></i> -->
+        <img src="./assets/images/en.png" alt="" width="30" height="20">
+      </div>
+      <!-- <div class="icon-tog">
+                <i class='bx bx-menu' id="btn"></i>
+            </div> -->
+    </div>
+
+    <ul class="nav_list">
+      <li>
+        <a href="#">
+          <i class='bx bx-user-plus'></i>
+          <span class="links_name">Log In / Register</span>
+        </a>
+        <span class="tooltip">Log In </span>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+      <li>
+        <a href="winners.html">
+          <i class='bx bx-trophy'></i>
+          <span class="links_name">Winners</span>
+        </a>
+        <span class="tooltip">Winners</span>
+      </li>
+      <li>
+        <a href="nominees.html">
+          <i class='bx bx-chat'></i>
+          <span class="links_name">Nominees</span>
+        </a>
+        <span class="tooltip">Nominees</span>
+      </li>
+      <li>
+        <a href="collections.html">
+          <i class='bx bx-add-to-queue'></i>
+          <span class="links_name">Collections</span>
+        </a>
+        <span class="tooltip">Collections</span>
+      </li>
+      <li>
+        <a href="academy.html">
+          <i class='bx bx-world'></i>
+          <span class="links_name">Academy</span>
+          <span class="new-btn">New</span>
+        </a>
+        <span class="tooltip">Academy</span>
+      </li>
+      <li>
+        <a href="professional.html">
+          <i class='bx bx-bulb'></i>
+          <span class="links_name badget-circle aquamarine" data-padge="3">Professional directory</span>
+        </a>
+        <span class="tooltip">Professional</span>
+      </li>
+      <li>
+        <a href="jobs.html">
+          <i class='bx bx-task'></i>
+          <span class="links_name badget-circle lightyellow" data-padge="1">Jobs & Talent</span>
+        </a>
+        <span class="tooltip">Jobs & Talent</span>
+      </li>
+      <li>
+        <a href="blog.html">
+          <i class='bx bx-badge-check'></i>
+          <span class="links_name">Blog</span>
+        </a>
+        <span class="tooltip">Blog</span>
+      </li>
+
+      <li>
+        <a href="books.html">
+          <i class='bx bx-book-bookmark'></i>
+          <span class="links_name">eBooks & Publications</span>
+        </a>
+        <span class="tooltip">eBooks</span>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bx-health'></i>
+          <span class="links_name">JURY 2021</span>
+        </a>
+        <span class="tooltip">JURY</span>
+      </li>
+
+      <li>
+        <a href="conferences.html">
+          <i class='bx bx-purchase-tag-alt'></i>
+          <span class="links_name">Toronto / Cancelled</span>
+        </a>
+        <span class="tooltip">Conferences</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="home_content text-white">
+
+
+    <nav class="">
+      <!-- start Nav Top -->
+      <div class="nav-top">
+        <div class="item pd-item">
+          <a href="#" class="nav-top-lang">english</a>
+        </div>
+        <div class="nav-top-center">
+          <h1 class="nav-top-desc">The awards of design, creativity and innovation on the internet</h1>
+        </div>
+        <ul class="social-icons item pd-item">
+          <li><i class="fab fa-instagram-square"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-facebook-f"></i></li>
+        </ul>
+      </div>
+      <!-- start Nav Bottom -->
+      <div class="nav-bottom">
+        <div class="menu-left pd-item">
+          <a href="#" class="menu-link" id="btn">
+            <div id="main">
+              <span style="font-size:18px;cursor:pointer">&#9776; MENU</span>
+            </div>
+          </a>
+        </div>
+  
+        <div class="menu-right  ">
+          <div class="item bt-search pd-item">
+              <i onclick="openSearsh()" class="fas fa-search"></i>
+          </div>
+          <div class="item login pd-item">
+              <span>Are you a member?</span>
+              <strong><a class="text-black login-text" href="/login">Register / log in</a></strong>
+          </div>
+          <div class="item has-tablet pd-item" id="bt-submit">
+              <a href="/submit/" class="button">
+                  <span>SUBMIT YOUR SITE!</span>
+              </a>
+          </div>
+      </div>
+
+        </div>
+        <div class="logo-header">
+          <a href="#">awwards.</a>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--start filter-->
+    <div class="list ">
+      <ul class="d-flex align-items-center">
+        <li><i class="fas fa-toolbox px-3"></i></li>
+        <li class="px-3 ">OUR STORE GET YOUR HANDS ON THE LATEST AND GREATEST AWWWARDS PRODUCTS AND PUBLICATIONS.</li>
+      </ul>
+    </div>
+
+    <section>
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between mb-3">
+          <div>
+            <h6>Sites of the day <span>Previous Winners</span> </h6>
+
+          </div>
+          <div>
+            <h6>Mobile Excellence <span>Site of the week</span></h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+                <a href="#" class="btn"><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between mb-3">
+          <div>
+            <h6>Sites of the day <span>Previous Winners</span> </h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card text-white card-has-bg click-col"
+              style="background-image:url('https://source.unsplash.com/600x900/?tech,street');">
+              <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street"
+                alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+                  <small class="card-meta mb-2">Thought Leadership</small>
+                  <h4 class="card-title mt-0 "><a class="text-white" herf="#">Goverment Lorem Ipsum Sit Amet Consectetur
+                      dipisi?</a></h4>
+                  <small><i class="far fa-clock"></i> October 15, 2020</small>
+                </div>
+                <div class="card-footer">
+                  <div class="media">
+                    <img class="mr-3 rounded-circle"
+                      src="https://cdn0.iconfinder.com/data/icons/user-pictures/100/male-512.png"
+                      alt="Generic placeholder image" style="max-width:50px">
+                    <div class="media-body">
+                      <h6 class="my-0 text-white d-block">Oz COruhlu</h6>
+                      <small>Director of UI/UX</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-white card-has-bg click-col"
+              style="background-image:url('https://source.unsplash.com/600x900/?tech,street');">
+              <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street"
+                alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+                  <small class="card-meta mb-2">Thought Leadership</small>
+                  <h4 class="card-title mt-0 "><a class="text-white" herf="#">Goverment Lorem Ipsum Sit Amet Consectetur
+                      dipisi?</a></h4>
+                  <small><i class="far fa-clock"></i> October 15, 2020</small>
+                </div>
+                <div class="card-footer">
+                  <div class="media">
+                    <img class="mr-3 rounded-circle"
+                      src="https://cdn0.iconfinder.com/data/icons/user-pictures/100/male-512.png"
+                      alt="Generic placeholder image" style="max-width:50px">
+                    <div class="media-body">
+                      <h6 class="my-0 text-white d-block">Oz COruhlu</h6>
+                      <small>Director of UI/UX</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-white card-has-bg click-col"
+              style="background-image:url('https://source.unsplash.com/600x900/?tech,street');">
+              <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street"
+                alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+                  <small class="card-meta mb-2">Thought Leadership</small>
+                  <h4 class="card-title mt-0 "><a class="text-white" herf="#">Goverment Lorem Ipsum Sit Amet Consectetur
+                      dipisi?</a></h4>
+                  <small><i class="far fa-clock"></i> October 15, 2020</small>
+                </div>
+                <div class="card-footer">
+                  <div class="media">
+                    <img class="mr-3 rounded-circle"
+                      src="https://cdn0.iconfinder.com/data/icons/user-pictures/100/male-512.png"
+                      alt="Generic placeholder image" style="max-width:50px">
+                    <div class="media-body">
+                      <h6 class="my-0 text-white d-block">Oz COruhlu</h6>
+                      <small>Director of UI/UX</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="">
+      <div class="container-fluid">
+        <div class="row h-100 py-5  ">
+          <div class="col-lg-8  pl-5 pb-5">
+            <div class="boxFooter">
+              <h3 class=" text-dark py-3 pl-4">The awards for design, creativity and innovation on the Internet</h3>
+              <ul class="list-unstyled d-flex justify-content-around  pl-2">
+                <li><a href="#" class="text-decoration-none text-dark ">Academy</a></li>
+                <li class="test"><a href="#" class="text-decoration-none text-dark ">Directory</a></li>
+                <li class="test"><a href="#" class="text-decoration-none text-dark  ">Jobs</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">About Us</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Winners</a></li>
+                <li><a href="#" class="text-decoration-none text-dark ">Nominees</a></li>
+                <li><a href="#" class="text-decoration-none text-dark ">Blog</a></li>
+              </ul>
+            </div>
+            <div class="py-2 pl-4 follow st">
+              <strong class="mr-3">Follow us</strong>
+              <a href="#" class="text-decoration-none text-dark mx-1">Twitter</a>
+              <a href="#" class="text-decoration-none text-dark mx-1">Facebook</a>
+              <a href="#" class="text-decoration-none text-dark mx-1">You tube</a>
+              <a href="#" class="text-decoration-none text-dark mx-1">Instagram</a>
+              <a href="#" class="text-decoration-none text-dark mx-1">Linked in</a>
+            </div>
+          </div>
+          <div class="col-lg-4 py-3 icon  ">
+            <p>Next Conferences <i class="fas fa-calendar-alt mx-2"></i> <a href="#" class="text-dark">Coming soon</a>
+            </p>
+          </div>
+        </div>
+        <div class="menuFooter d-flex  ">
+          <div class="col-lg-8  items">
+            <ul class="list-unstyled d-flex  pl-5 py-2 ">
+              <li><a href="#" class="text-decoration-none text-dark mx-2">Contact Us</a></li>
+              <li><a href="#" class="text-decoration-none text-dark mx-2">F.A.Q</a></li>
+              <li><a href="#" class="text-decoration-none text-dark mx-2">Cookies Policy</a></li>
+              <li><a href="#" class="text-decoration-none text-dark mx-2"> Legal Terms</a></li>
+              <li><a href="#" class="text-decoration-none text-dark mx-2">Privacy Policy</a></li>
+              <li><a href="#" class="text-decoration-none text-dark mx-2">English </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4   text-center py-2 inner ">
+            <a href="#" class="text-dark ">Private Cloud Stacktrace</a>
+          </div>
+        </div>
+    </footer>
+
+    <div class="overlay-click" onclick="closeNav()"></div>
+  </div>
+
+  <script src="./assets/js/all.min.js"></script>
+  <script src="./assets/js/Script.js"></script>
+  <script src="./assets/js/hom&cards.js"></script>
+
+</body>
+
+</html>
